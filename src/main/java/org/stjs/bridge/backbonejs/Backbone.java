@@ -11,6 +11,10 @@ public class Backbone {
 	public static JQueryCore<JQueryCore<?>> $;
 
 	public static class Collection<T extends Model> extends org.stjs.bridge.backbonejs.Collection<T> {
+		public Collection() {
+			super();
+		}
+
 		public Collection(Array<T> models) {
 			super(models);
 		}
@@ -24,6 +28,14 @@ public class Backbone {
 	}
 
 	public static class View<T extends Model> extends org.stjs.bridge.backbonejs.View<T> {
+
+		public View() {
+			super();
+		}
+
+		public View(ViewOptions<T> options) {
+			super(options);
+		}
 	}
 
 	public static class Router extends org.stjs.bridge.backbonejs.Router {

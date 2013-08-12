@@ -4,7 +4,7 @@ import org.stjs.javascript.Map;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.jquery.JQueryCore;
 
-public class View<T extends Model> extends Events {
+class View<T extends Model> extends Events {
 	public Element el;
 	public JQueryCore<JQueryCore<?>> $el;
 	public Map<String, ? extends Object> attributes;
@@ -13,6 +13,14 @@ public class View<T extends Model> extends Events {
 	public String id;
 	public T model;
 	public Collection<T> collection;
+
+	public View() {
+
+	}
+
+	public View(ViewOptions<T> options) {
+
+	}
 
 	public void setElement(Element element) {
 	}

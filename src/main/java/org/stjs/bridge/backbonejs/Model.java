@@ -13,7 +13,7 @@ public class Model extends Events {
 	public Object validationError;
 	public Object urlRoot;
 
-	public Map<String, Object> defaults() {
+	public Map<String, ? extends Object> defaults() {
 		throw new UnsupportedOperationException();
 	}
 

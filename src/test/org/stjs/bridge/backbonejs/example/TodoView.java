@@ -1,22 +1,26 @@
 package org.stjs.bridge.backbonejs.example;
 
+import static org.stjs.bridge.underscorejs.GlobalUnderscoreJS._;
 import static org.stjs.javascript.JSCollections.$map;
 
 import org.stjs.bridge.backbonejs.Backbone.View;
+import org.stjs.bridge.backbonejs.ViewOptions;
+import org.stjs.bridge.underscorejs.TemplateOptions;
 import org.stjs.javascript.JSObjectAdapter;
-import org.stjs.javascript.functions.Function1;
+import org.stjs.javascript.functions.Function2;
 import org.stjs.javascript.jquery.Event;
 import org.stjs.javascript.jquery.JQueryCore;
 
 public class TodoView extends View<TodoModel> {
 
 	private JQueryCore<JQueryCore<?>> input;
-	private Function1<Object, String> template;
+	private Function2<Object, TemplateOptions, String> template;
 
-	public TodoView() {
+	public TodoView(ViewOptions<TodoModel> options) {
+		super(options);
 		tagName = "li";
 		template = _.template($("#item-template").html());
-		//The DOM events specific to an item.
+		// The DOM events specific to an item.
 		events = $map("click .toggle", "toggleDone", //
 				"dblclick .view", "edit",//
 				"click a.destroy", "clear",//
@@ -31,7 +35,7 @@ public class TodoView extends View<TodoModel> {
 
 	@Override
 	public TodoView render() {
-		this.$el.html(this.template.$invoke(this.model.toJSON()));
+		this.$el.html(this.template.$invoke(this.model.toJSON(), null));
 		this.$el.toggleClass("done", (Boolean) this.model.get("done"));
 		this.input = this.$(".edit");
 		return this;

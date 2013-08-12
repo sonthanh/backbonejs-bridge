@@ -2,19 +2,24 @@ package org.stjs.bridge.backbonejs;
 
 import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
+import org.stjs.javascript.functions.Callback3;
 
 class Collection<T extends Model> extends Events {
 	public Class<T> model;
 	public Array<T> models;
 	public int length;
-	//A comparator can be defined as a sortBy (pass a function that takes a single argument),
-	//as a sort (pass a comparator function that expects two arguments),
-	//or as a string indicating the attribute to sort by.
+	// A comparator can be defined as a sortBy (pass a function that takes a single argument),
+	// as a sort (pass a comparator function that expects two arguments),
+	// or as a string indicating the attribute to sort by.
 	public Object comparator;
 
-	//Set the url property (or function) on a collection to reference its location on the server.
-	//Models within the collection will use url to construct URLs of their own.
+	// Set the url property (or function) on a collection to reference its location on the server.
+	// Models within the collection will use url to construct URLs of their own.
 	public Object url;
+
+	public Collection() {
+		throw new UnsupportedOperationException();
+	}
 
 	public Collection(Array<T> models) {
 		throw new UnsupportedOperationException();
@@ -31,7 +36,33 @@ class Collection<T extends Model> extends Events {
 	public void sync() {
 	}
 
-	//underscore methods
+	// underscore methods
+	public void each(Callback3<T, Integer, Array<T>> iterator) {
+
+	}
+
+	public void each(Callback3<T, Integer, Array<T>> iterator, Object context) {
+
+	}
+
+	public Array<T> without(T... values) {
+		throw new UnsupportedOperationException();
+	}
+
+	public Array<T> without(Array<T> values) {
+		throw new UnsupportedOperationException();
+	}
+
+	public T last() {
+		throw new UnsupportedOperationException();
+	}
+
+	public Array<T> last(int n) {
+		throw new UnsupportedOperationException();
+	}
+
+	// -- end underscore
+
 	public void add(Array<T> modelsToAdd) {
 	}
 
