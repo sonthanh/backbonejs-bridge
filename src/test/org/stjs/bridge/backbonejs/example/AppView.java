@@ -3,7 +3,10 @@ package org.stjs.bridge.backbonejs.example;
 import static org.stjs.javascript.JSCollections.$map;
 
 import org.stjs.bridge.backbonejs.Backbone.View;
+import org.stjs.javascript.JSObjectAdapter;
 import org.stjs.javascript.dom.Element;
+import org.stjs.javascript.dom.Input;
+import org.stjs.javascript.functions.Function1;
 import org.stjs.javascript.jquery.Event;
 import org.stjs.javascript.jquery.JQueryCore;
 
@@ -12,11 +15,12 @@ public class AppView extends View<TodoModel> {
 	private JQueryCore<JQueryCore<?>> input;
 	private JQueryCore<JQueryCore<?>> footer;
 	private JQueryCore<JQueryCore<?>> main;
-	private Element allCheckbox;
+	private Input allCheckbox;
+	private Function1<Object, String> statsTemplate;
 
 	public AppView() {
 		el = $("#todoapp").get(0);
-	    statsTemplate: _.template($("#stats-template").html());
+	    statsTemplate= _.template($("#stats-template").html());
 	    events=$map(
 		      "keypress #new-todo" ,  "createOnEnter",//
 		      "click #clear-completed", "clearCompleted",//
@@ -27,11 +31,11 @@ public class AppView extends View<TodoModel> {
 
 	    public void initialize() {
 	      this.input = this.$("#new-todo");
-	      this.allCheckbox = this.$("#toggle-all").get(0);
+	      this.allCheckbox = (Input)this.$("#toggle-all").get(0);
 
-	      this.listenTo(Todos, "add", this.addOne);
-	      this.listenTo(Todos, "reset", this.addAll);
-	      this.listenTo(Todos, "all", this.render);
+	      this.listenTo(Todos, "add", JSObjectAdapter.$get(this, "addOne"));
+	      this.listenTo(Todos, "reset", JSObjectAdapter.$get(this, "addAll"));
+	      this.listenTo(Todos, "all", JSObjectAdapter.$get(this, "render"));
 
 	      this.footer = this.$("footer");
 	      this.main = $("#main");
@@ -40,20 +44,21 @@ public class AppView extends View<TodoModel> {
 	    }
 
 	    @Override
-		public void render() {
+		public AppView render() {
 	      int done = Todos.done().$length();
 	      int remaining = Todos.remaining().$length();
 
 	      if (Todos.length > 0) {
 	        this.main.show();
 	        this.footer.show();
-	        this.footer.html(this.statsTemplate({done: done, remaining: remaining}));
+	        this.footer.html(statsTemplate.$invoke($map("done", done, "remaining", remaining)));
 	      } else {
 	        this.main.hide();
 	        this.footer.hide();
 	      }
 
-	      this.allCheckbox.checked = remaining == 0;
+	     this.allCheckbox.checked =  remaining == 0;
+	      return this;
 	    }
 
 
@@ -63,7 +68,7 @@ public class AppView extends View<TodoModel> {
 	    }
 
 
-	    public addAll() {
+	    public void addAll() {
 	      Todos.each(this.addOne, this);
 	    }
 
@@ -72,7 +77,7 @@ public class AppView extends View<TodoModel> {
 	      if (e.keyCode != 13) {
 			return;
 		}
-	      if (!this.input.val()) {
+	      if (this.input.val() != null) {
 			return;
 		}
 

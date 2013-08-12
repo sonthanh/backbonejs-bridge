@@ -3,7 +3,7 @@ package org.stjs.bridge.backbonejs;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
 
-public class Model {
+public class Model extends Events {
 	public String id;
 	public String idAttribute;
 	public Object cid;

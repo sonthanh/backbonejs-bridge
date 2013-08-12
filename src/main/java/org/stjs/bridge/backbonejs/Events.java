@@ -30,19 +30,19 @@ public class Events {
 	public void once(String event, Object callback, Object context) {
 	}
 
-	public void listenTo(Model model, String event, Object callback) {
+	public void listenTo(Events model, String event, Object callback) {
 	}
 
-	public void listenToOnce(Model model, String event, Object callback) {
+	public void listenToOnce(Events model, String event, Object callback) {
 	}
 
-	public void stopListening(Model model, String event, Object callback) {
+	public void stopListening(Events model, String event, Object callback) {
 	}
 
-	public void stopListening(Model model, String event) {
+	public void stopListening(Events model, String event) {
 	}
 
-	public void stopListening(Model model) {
+	public void stopListening(Events model) {
 	}
 
 	public void stopListening() {

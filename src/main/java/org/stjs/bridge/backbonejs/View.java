@@ -4,7 +4,7 @@ import org.stjs.javascript.Map;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.jquery.JQueryCore;
 
-public class View<T extends Model> {
+public class View<T extends Model> extends Events {
 	public Element el;
 	public JQueryCore<JQueryCore<?>> $el;
 	public Map<String, ? extends Object> attributes;
