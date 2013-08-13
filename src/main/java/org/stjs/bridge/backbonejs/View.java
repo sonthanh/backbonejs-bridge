@@ -25,9 +25,9 @@ class View<T extends Model> extends Events {
 	public void setElement(Element element) {
 	}
 
-	public JQueryCore<JQueryCore<?>> $(Object selector) {
-		throw new UnsupportedOperationException();
-	}
+	// public JQueryCore<JQueryCore<?>> $(Object selector) {
+	// throw new UnsupportedOperationException();
+	// }
 
 	public View render() {
 		throw new UnsupportedOperationException();

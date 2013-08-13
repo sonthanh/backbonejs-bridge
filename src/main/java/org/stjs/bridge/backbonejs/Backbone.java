@@ -2,13 +2,13 @@ package org.stjs.bridge.backbonejs;
 
 import org.stjs.javascript.Array;
 import org.stjs.javascript.functions.Callback1;
-import org.stjs.javascript.jquery.JQueryCore;
 
 public class Backbone {
 	public static Callback1<Object> ajax;
 	public static boolean emulateHTTP;
 	public static boolean emulateJSON;
-	public static JQueryCore<JQueryCore<?>> $;
+
+	// public static JQueryCore<JQueryCore<?>> $;
 
 	public static class Collection<T extends Model> extends org.stjs.bridge.backbonejs.Collection<T> {
 		public Collection() {
@@ -39,6 +39,12 @@ public class Backbone {
 	}
 
 	public static class Router extends org.stjs.bridge.backbonejs.Router {
+	}
+
+	public static class LocalStorage extends org.stjs.bridge.backbonejs.LocalStorage {
+		public LocalStorage(String name) {
+			super(name);
+		}
 	}
 
 	public static <T> void sync(String method, Array<T> model, SyncOptions options) {

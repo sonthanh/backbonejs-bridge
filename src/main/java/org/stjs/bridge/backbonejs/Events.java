@@ -9,7 +9,7 @@ public class Events {
 	public void on(String event, Object callback, Object context) {
 	}
 
-	public void on(Map<String, Object> events) {
+	public void on(Map<String, ? extends Object> events) {
 	}
 
 	public void off(String event, Object callback) {
