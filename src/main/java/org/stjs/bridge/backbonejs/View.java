@@ -4,7 +4,7 @@ import org.stjs.javascript.Map;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.jquery.JQueryCore;
 
-class View<T extends Model> extends Events {
+abstract class View<T extends Model> extends Events {
 	public Element el;
 	public JQueryCore<JQueryCore<?>> $el;
 	public Map<String, ? extends Object> attributes;
@@ -22,14 +22,18 @@ class View<T extends Model> extends Events {
 
 	}
 
+	protected void initialize() {
+
+	}
+
 	public void setElement(Element element) {
 	}
 
-	// public JQueryCore<JQueryCore<?>> $(Object selector) {
-	// throw new UnsupportedOperationException();
-	// }
+	public JQueryCore<JQueryCore<?>> $(Object selector) {
+		throw new UnsupportedOperationException();
+	}
 
-	public View render() {
+	public View<T> render() {
 		throw new UnsupportedOperationException();
 	}
 
@@ -37,7 +41,12 @@ class View<T extends Model> extends Events {
 		throw new UnsupportedOperationException();
 	}
 
-	public void delegateEvents() {
+	protected void _ensureElement() {
+
+	}
+
+	protected void delegateEvents() {
+
 	}
 
 	public void delegateEvents(Map<String, Object> events) {
@@ -46,11 +55,11 @@ class View<T extends Model> extends Events {
 	public void undelegateEvents() {
 	}
 
-	public static <V extends View> V extend(V properties) {
+	public static <V extends View<? extends Model>> V extend(V properties) {
 		throw new UnsupportedOperationException();
 	}
 
-	public static <V extends View> V extend(V properties, Map<String, Object> staticProperties) {
+	public static <V extends View<? extends Model>> V extend(V properties, Map<String, Object> staticProperties) {
 		throw new UnsupportedOperationException();
 	}
 

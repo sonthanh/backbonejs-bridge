@@ -1,6 +1,7 @@
 package org.stjs.bridge.backbonejs;
 
 import org.stjs.javascript.Array;
+import org.stjs.javascript.Map;
 import org.stjs.javascript.functions.Callback1;
 
 public class Backbone {
@@ -25,9 +26,12 @@ public class Backbone {
 	}
 
 	public static class Model extends org.stjs.bridge.backbonejs.Model {
+		public Model(Map<String, ? extends Object> attributes, ModelOptions options) {
+			super(attributes, options);
+		}
 	}
 
-	public static class View<T extends Model> extends org.stjs.bridge.backbonejs.View<T> {
+	abstract public static class View<T extends Model> extends org.stjs.bridge.backbonejs.View<T> {
 
 		public View() {
 			super();
