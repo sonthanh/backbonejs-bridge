@@ -2,9 +2,9 @@ package org.stjs.bridge.backbonejs;
 
 import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
-import org.stjs.javascript.functions.Callback3;
 
-class Collection<T extends Model> extends Events {
+@SuppressWarnings("unused")
+class Collection<T extends Model> extends CollectionUnderscore<T> {
 	public Class<T> model;
 	public Array<T> models;
 	public int length;
@@ -34,31 +34,6 @@ class Collection<T extends Model> extends Events {
 	}
 
 	public void sync() {
-	}
-
-	// underscore methods
-	public void each(Callback3<T, Integer, Array<T>> iterator) {
-
-	}
-
-	public void each(Callback3<T, Integer, Array<T>> iterator, Object context) {
-
-	}
-
-	public Array<T> without(T... values) {
-		throw new UnsupportedOperationException();
-	}
-
-	public Array<T> without(Array<T> values) {
-		throw new UnsupportedOperationException();
-	}
-
-	public T last() {
-		throw new UnsupportedOperationException();
-	}
-
-	public Array<T> last(int n) {
-		throw new UnsupportedOperationException();
 	}
 
 	// -- end underscore

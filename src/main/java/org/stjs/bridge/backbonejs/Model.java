@@ -128,4 +128,29 @@ public class Model extends Events {
 	public Map<String, Object> previousAttributes() {
 		throw new UnsupportedOperationException();
 	}
+
+	//from underscore js
+	public Array<String> keys() {
+		throw new UnsupportedOperationException();
+	}
+
+	public Array<? extends Object> values() {
+		throw new UnsupportedOperationException();
+	}
+
+	public Array<Array<? extends Object>> pairs() {
+		throw new UnsupportedOperationException();
+	}
+
+	public <T> T invert() {
+		throw new UnsupportedOperationException();
+	}
+
+	public <T> T pick(String... keys) {
+		throw new UnsupportedOperationException();
+	}
+
+	public <T> T omit(String... keys) {
+		throw new UnsupportedOperationException();
+	}
 }
