@@ -1,5 +1,6 @@
 package org.stjs.bridge.backbonejs;
 
+import org.stjs.bridge.backbonejs.options.RouterOptions;
 import org.stjs.javascript.Map;
 import org.stjs.javascript.RegExp;
 

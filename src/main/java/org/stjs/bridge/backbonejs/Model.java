@@ -1,5 +1,11 @@
 package org.stjs.bridge.backbonejs;
 
+import org.stjs.bridge.backbonejs.options.ChangeModelOptions;
+import org.stjs.bridge.backbonejs.options.ModelOptions;
+import org.stjs.bridge.backbonejs.options.ParseModelOptions;
+import org.stjs.bridge.backbonejs.options.SaveModelOptions;
+import org.stjs.bridge.backbonejs.options.SyncOptions;
+import org.stjs.bridge.backbonejs.options.ValidateModelOptions;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
 
@@ -52,7 +58,7 @@ public class Model extends Events {
 		throw new UnsupportedOperationException();
 	}
 
-	public void unset(String attribute, ModelOptions options) {
+	public void unset(String attribute, ChangeModelOptions options) {
 		throw new UnsupportedOperationException();
 	}
 
@@ -60,7 +66,7 @@ public class Model extends Events {
 		throw new UnsupportedOperationException();
 	}
 
-	public void clear(ModelOptions options) {
+	public void clear(ChangeModelOptions options) {
 		throw new UnsupportedOperationException();
 	}
 
@@ -74,22 +80,22 @@ public class Model extends Events {
 	public void fetch() {
 	}
 
-	public void fetch(ModelOptions options) {
+	public void fetch(SyncOptions options) {
 	}
 
 	public void save(Map<String, ? extends Object> properties) {
 	}
 
-	public void save(Map<String, Object> properties, ModelOptions options) {
+	public void save(Map<String, Object> properties, SaveModelOptions options) {
 	}
 
 	public void destroy() {
 	}
 
-	public void destroy(ModelOptions options) {
+	public void destroy(SaveModelOptions options) {
 	}
 
-	public void validate(Map<String, Object> properties, ModelOptions options) {
+	public void validate(Map<String, Object> properties, ValidateModelOptions options) {
 	}
 
 	public boolean isValid() {
@@ -100,7 +106,7 @@ public class Model extends Events {
 		throw new UnsupportedOperationException();
 	}
 
-	public Model parse(Object response, CollectionOptions options) {
+	public Model parse(Object response, ParseModelOptions options) {
 		throw new UnsupportedOperationException();
 	}
 

@@ -1,4 +1,4 @@
-package org.stjs.bridge.backbonejs;
+package org.stjs.bridge.backbonejs.options;
 
 public class HistoryOptions {
 	public boolean pushState;

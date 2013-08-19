@@ -1,5 +1,6 @@
 package org.stjs.bridge.backbonejs;
 
+import org.stjs.bridge.backbonejs.options.CollectionOptions;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
 

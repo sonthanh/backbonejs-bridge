@@ -1,5 +1,9 @@
 package org.stjs.bridge.backbonejs;
 
+import org.stjs.bridge.backbonejs.options.CollectionOptions;
+import org.stjs.bridge.backbonejs.options.ModelOptions;
+import org.stjs.bridge.backbonejs.options.SyncOptions;
+import org.stjs.bridge.backbonejs.options.ViewOptions;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
 import org.stjs.javascript.functions.Callback1;
