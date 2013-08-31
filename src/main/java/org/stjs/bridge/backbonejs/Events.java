@@ -2,7 +2,7 @@ package org.stjs.bridge.backbonejs;
 
 import org.stjs.javascript.Map;
 
-class Events {
+public class Events {
 	public void on(String event, Object callback) {
 	}
 
