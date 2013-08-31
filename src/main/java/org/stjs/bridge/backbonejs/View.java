@@ -30,17 +30,11 @@ abstract class View<T extends Model> extends Events {
 	public void setElement(Element element) {
 	}
 
-	public JQueryCore<JQueryCore<?>> $(Object selector) {
-		throw new UnsupportedOperationException();
-	}
+	public native JQueryCore<JQueryCore<?>> $ (Object selector);
 
-	public View<T> render() {
-		throw new UnsupportedOperationException();
-	}
+	public native View<T> render ();
 
-	public void remove() {
-		throw new UnsupportedOperationException();
-	}
+	public native void remove ();
 
 	protected void _ensureElement() {
 
@@ -56,12 +50,8 @@ abstract class View<T extends Model> extends Events {
 	public void undelegateEvents() {
 	}
 
-	public static <V extends View<? extends Model>> V extend(V properties) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <V extends View<? extends Model>> V extend (V properties);
 
-	public static <V extends View<? extends Model>> V extend(V properties, Map<String, Object> staticProperties) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <V extends View<? extends Model>> V extend (V properties, Map<String, Object> staticProperties);
 
 }

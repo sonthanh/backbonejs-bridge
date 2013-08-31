@@ -22,141 +22,77 @@ public class Model extends Events {
 	public Model(Map<String, ? extends Object> attributes, ModelOptions options) {
 	}
 
-	public Map<String, ? extends Object> defaults() {
-		throw new UnsupportedOperationException();
-	}
+	public native Map<String, ? extends Object> defaults();
 
-	public static <V extends Model> Class<V> extend(V properties) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <V extends Model> Class<V> extend(V properties);
 
-	public static <V extends Model> Class<V> extend(V properties, Map<String, Object> staticProperties) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <V extends Model> Class<V> extend(V properties, Map<String, Object> staticProperties);
 
-	public <T> T get(String attribute) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T get(String attribute);
 
-	public void set(Map<String, Object> attributes) {
-		throw new UnsupportedOperationException();
-	}
+	public native void set(Map<String, Object> attributes);
 
-	public void set(String attribute, Object value) {
-		throw new UnsupportedOperationException();
-	}
+	public native void set(String attribute, Object value);
 
-	public String escape(String attribute) {
-		throw new UnsupportedOperationException();
-	}
+	public native String escape(String attribute);
 
-	public boolean has(String attribute) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean has(String attribute);
 
-	public void unset(String attribute) {
-		throw new UnsupportedOperationException();
-	}
+	public native void unset(String attribute);
 
-	public void unset(String attribute, ChangeModelOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native void unset(String attribute, ChangeModelOptions options);
 
-	public void clear() {
-		throw new UnsupportedOperationException();
-	}
+	public native void clear();
 
-	public void clear(ChangeModelOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native void clear(ChangeModelOptions options);
 
-	public String toJSON() {
-		throw new UnsupportedOperationException();
-	}
+	public native String toJSON();
 
-	public void sync(String method, Model model, SyncOptions options) {
-	}
+	public native void sync(String method, Model model, SyncOptions options);
 
-	public void fetch() {
-	}
+	public native void fetch();
 
-	public void fetch(SyncOptions options) {
-	}
+	public native void fetch(SyncOptions options);
 
-	public void save(Map<String, ? extends Object> properties) {
-	}
+	public native void save(Map<String, ? extends Object> properties);
 
-	public void save(Map<String, Object> properties, SaveModelOptions options) {
-	}
+	public native void save(Map<String, Object> properties, SaveModelOptions options);
 
-	public void destroy() {
-	}
+	public native void destroy();
 
-	public void destroy(SaveModelOptions options) {
-	}
+	public native void destroy(SaveModelOptions options);
 
-	public void validate(Map<String, Object> properties, ValidateModelOptions options) {
-	}
+	public native void validate(Map<String, Object> properties, ValidateModelOptions options);
 
-	public boolean isValid() {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isValid();
 
-	public String url() {
-		throw new UnsupportedOperationException();
-	}
+	public native String url();
 
-	public Model parse(Object response, ParseModelOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native Model parse(Object response, ParseModelOptions options);
 
 	@Override
-	public Model clone() {
-		throw new UnsupportedOperationException();
-	}
+	public native Model clone();
 
-	public boolean isNew() {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isNew();
 
-	public boolean hasChanged() {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean hasChanged();
 
-	public boolean hasChanged(String attribute) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean hasChanged(String attribute);
 
-	public <T> T previous(String attribute) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T previous(String attribute);
 
-	public Map<String, Object> previousAttributes() {
-		throw new UnsupportedOperationException();
-	}
+	public native Map<String, Object> previousAttributes();
 
-	//from underscore js
-	public Array<String> keys() {
-		throw new UnsupportedOperationException();
-	}
+	// from underscore js
+	public native Array<String> keys();
 
-	public Array<? extends Object> values() {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<? extends Object> values();
 
-	public Array<Array<? extends Object>> pairs() {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<Array<? extends Object>> pairs();
 
-	public <T> T invert() {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T invert();
 
-	public <T> T pick(String... keys) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T pick(String... keys);
 
-	public <T> T omit(String... keys) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T omit(String... keys);
 }

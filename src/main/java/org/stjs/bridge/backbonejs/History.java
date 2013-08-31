@@ -3,11 +3,7 @@ package org.stjs.bridge.backbonejs;
 import org.stjs.bridge.backbonejs.options.HistoryOptions;
 
 public class History {
-	public boolean start() {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean start ();
 
-	public boolean start(HistoryOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean start (HistoryOptions options);
 }

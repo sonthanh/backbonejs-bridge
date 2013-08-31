@@ -19,20 +19,18 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 	public Object url;
 
 	public Collection() {
-		throw new UnsupportedOperationException();
+		//
 	}
 
 	public Collection(Array<T> models) {
-		throw new UnsupportedOperationException();
+		//
 	}
 
 	public Collection(Array<T> models, CollectionOptions options) {
-		throw new UnsupportedOperationException();
+		//
 	}
 
-	public String toJson() {
-		throw new UnsupportedOperationException();
-	}
+	public native String toJson();
 
 	public void sync() {
 	}
@@ -57,13 +55,9 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 	public void set(Array<T> modelsToSet, CollectionOptions options) {
 	}
 
-	public T get(Object id) {
-		throw new UnsupportedOperationException();
-	}
+	public native T get(Object id);
 
-	public T at(int index) {
-		throw new UnsupportedOperationException();
-	}
+	public native T at(int index);
 
 	public void push(Array<T> modelsToPush) {
 	}
@@ -71,13 +65,9 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 	public void push(Array<T> modelsToPush, CollectionOptions options) {
 	}
 
-	public T pop() {
-		throw new UnsupportedOperationException();
-	}
+	public native T pop();
 
-	public T pop(CollectionOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native T pop(CollectionOptions options);
 
 	public void unshift(Array<T> modelsToUnshift) {
 	}
@@ -85,17 +75,11 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 	public void unshift(Array<T> modelsToUnshift, CollectionOptions options) {
 	}
 
-	public T shift() {
-		throw new UnsupportedOperationException();
-	}
+	public native T shift();
 
-	public T shift(CollectionOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native T shift(CollectionOptions options);
 
-	public Array<T> slice(int begin, int end) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> slice(int begin, int end);
 
 	public void sort() {
 	}
@@ -103,26 +87,16 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 	public void sort(CollectionOptions options) {
 	}
 
-	public <V> Array<V> pluck(String attribute) {
-		throw new UnsupportedOperationException();
-	}
+	public native <V> Array<V> pluck(String attribute);
 
-	public Array<T> where(T criteria) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> where(T criteria);
 
-	public T findWhere(T criteria) {
-		throw new UnsupportedOperationException();
-	}
+	public native T findWhere(T criteria);
 
-	public Array<T> parse(Object response, CollectionOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> parse(Object response, CollectionOptions options);
 
 	@Override
-	public Collection<T> clone() {
-		throw new UnsupportedOperationException();
-	}
+	public native Collection<T> clone();
 
 	public void fetch() {
 	}
@@ -130,20 +104,13 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 	public void fetch(CollectionOptions options) {
 	}
 
-	public T create(Map<String, Object> attributes) {
-		throw new UnsupportedOperationException();
-	}
+	public native T create(Map<String, Object> attributes);
 
-	public T create(Map<String, Object> attributes, CollectionOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native T create(Map<String, Object> attributes, CollectionOptions options);
 
-	public static <V extends Backbone.Collection<?>> Class<V> extend(V properties) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <V extends Backbone.Collection<?>> Class<V> extend(V properties);
 
-	public static <V extends Backbone.Collection<?>> Class<V> extend(V properties, Map<String, Object> staticProperties) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <V extends Backbone.Collection<?>> Class<V> extend(V properties,
+			Map<String, Object> staticProperties);
 
 }

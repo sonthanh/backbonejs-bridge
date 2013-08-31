@@ -61,7 +61,5 @@ public class Backbone {
 	public static <T> void sync(String method, Array<T> model) {
 	}
 
-	public static Backbone noConflict() {
-		throw new UnsupportedOperationException();
-	}
+	public native static Backbone noConflict ();
 }

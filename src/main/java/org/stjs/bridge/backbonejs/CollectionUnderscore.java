@@ -9,238 +9,122 @@ import org.stjs.javascript.functions.Function4;
 @SuppressWarnings("unused")
 class CollectionUnderscore<T extends Model> extends Events {
 	//from collections
-	public void each(Callback3<T, Integer, Array<T>> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native void each (Callback3<T, Integer, Array<T>> iterator);
 
-	public void each(Callback3<T, Integer, Array<T>> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native void each (Callback3<T, Integer, Array<T>> iterator, Object context);
 
-	public Array<T> map(Callback3<T, Integer, Array<T>> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> map (Callback3<T, Integer, Array<T>> iterator);
 
-	public Array<T> map(Callback3<T, Integer, Array<T>> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> map (Callback3<T, Integer, Array<T>> iterator, Object context);
 
-	public <R> R reduce(Function4<R, T, Integer, Array<T>, R> iterator, R memo) {
-		throw new UnsupportedOperationException();
-	}
+	public native <R> R reduce (Function4<R, T, Integer, Array<T>, R> iterator, R memo);
 
-	public <R> R reduce(Function4<R, T, Integer, Array<T>, R> iterator, R memo, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native <R> R reduce (Function4<R, T, Integer, Array<T>, R> iterator, R memo, Object context);
 
-	public <R> R reduceRight(Function4<R, T, Integer, Array<T>, R> iterator, R memo) {
-		throw new UnsupportedOperationException();
-	}
+	public native <R> R reduceRight (Function4<R, T, Integer, Array<T>, R> iterator, R memo);
 
-	public <R> R reduceRight(Function4<R, T, Integer, Array<T>, R> iterator, R memo, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native <R> R reduceRight (Function4<R, T, Integer, Array<T>, R> iterator, R memo, Object context);
 
-	public T find(Function1<T, Boolean> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native T find (Function1<T, Boolean> iterator);
 
-	public T find(Function1<T, Boolean> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native T find (Function1<T, Boolean> iterator, Object context);
 
-	public Array<T> filter(Function1<T, Boolean> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> filter (Function1<T, Boolean> iterator);
 
-	public Array<T> filter(Function1<T, Boolean> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> filter (Function1<T, Boolean> iterator, Object context);
 
-	public Array<T> reject(Function1<T, Boolean> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> reject (Function1<T, Boolean> iterator);
 
-	public Array<T> reject(Function1<T, Boolean> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> reject (Function1<T, Boolean> iterator, Object context);
 
-	public boolean every() {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean every ();
 
-	public boolean every(Function1<T, Boolean> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean every (Function1<T, Boolean> iterator);
 
-	public boolean every(Function1<T, Boolean> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean every (Function1<T, Boolean> iterator, Object context);
 
-	public boolean some() {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean some ();
 
-	public boolean some(Function1<T, Boolean> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean some (Function1<T, Boolean> iterator);
 
-	public boolean some(Function1<T, Boolean> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean some (Function1<T, Boolean> iterator, Object context);
 
-	public boolean contains(T value) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean contains (T value);
 
-	public Array<T> invoke(Object method, Object... arguments) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> invoke (Object method, Object... arguments);
 
-	public T max() {
-		throw new UnsupportedOperationException();
-	}
+	public native T max ();
 
-	public <M> M max(Function1<T, M> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native <M> M max (Function1<T, M> iterator);
 
-	public <M> M max(Function1<T, M> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native <M> M max (Function1<T, M> iterator, Object context);
 
-	public T min() {
-		throw new UnsupportedOperationException();
-	}
+	public native T min ();
 
-	public <M> M min(Function1<T, M> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native <M> M min (Function1<T, M> iterator);
 
-	public <M> M min(Function1<T, M> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native <M> M min (Function1<T, M> iterator, Object context);
 
-	public Array<T> sortBy(Function1<T, T> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> sortBy (Function1<T, T> iterator);
 
-	public Array<T> sortBy(Function1<T, T> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> sortBy (Function1<T, T> iterator, Object context);
 
-	public Array<T> sortBy(String property) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> sortBy (String property);
 
-	public Array<T> sortBy(String property, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> sortBy (String property, Object context);
 
-	public Map<String, Array<T>> groupBy(Function1<T, T> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native Map<String, Array<T>> groupBy (Function1<T, T> iterator);
 
-	public Map<String, Array<T>> groupBy(Function1<T, T> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native Map<String, Array<T>> groupBy (Function1<T, T> iterator, Object context);
 
-	public Map<String, Array<T>> groupBy(String property) {
-		throw new UnsupportedOperationException();
-	}
+	public native Map<String, Array<T>> groupBy (String property);
 
-	public Map<String, Array<T>> groupBy(String property, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native Map<String, Array<T>> groupBy (String property, Object context);
 
-	public Array<T> shuffle() {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> shuffle ();
 
-	public Array<T> toArray() {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> toArray ();
 
-	public int size() {
-		throw new UnsupportedOperationException();
-	}
+	public native int size ();
 
 	//from arrays
 
-	public T first() {
-		throw new UnsupportedOperationException();
-	}
+	public native T first ();
 
-	public Array<T> first(int n) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> first (int n);
 
-	public Array<T> initial() {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> initial ();
 
-	public Array<T> initial(int n) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> initial (int n);
 
-	public T last() {
-		throw new UnsupportedOperationException();
-	}
+	public native T last ();
 
-	public Array<T> last(int n) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> last (int n);
 
-	public Array<T> rest() {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> rest ();
 
-	public Array<T> rest(int n) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> rest (int n);
 
-	public Array<T> without(T... values) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> without (T... values);
 
-	public Array<T> without(Array<T> values) {
-		throw new UnsupportedOperationException();
-	}
+	public native Array<T> without (Array<T> values);
 
-	public int indexOf(T value) {
-		throw new UnsupportedOperationException();
-	}
+	public native int indexOf (T value);
 
-	public int indexOf(T value, boolean isSorted) {
-		throw new UnsupportedOperationException();
-	}
+	public native int indexOf (T value, boolean isSorted);
 
-	public int lastTndexOf(T value) {
-		throw new UnsupportedOperationException();
-	}
+	public native int lastTndexOf (T value);
 
-	public int lastTndexOf(T value, int fromIndex) {
-		throw new UnsupportedOperationException();
-	}
+	public native int lastTndexOf (T value, int fromIndex);
 
-	public int sortedIndex(T value) {
-		throw new UnsupportedOperationException();
-	}
+	public native int sortedIndex (T value);
 
-	public <V> int sortedIndex(V value, Function1<T, V> iterator) {
-		throw new UnsupportedOperationException();
-	}
+	public native <V> int sortedIndex (V value, Function1<T, V> iterator);
 
-	public <V> int sortedIndex(V value, Function1<T, V> iterator, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native <V> int sortedIndex (V value, Function1<T, V> iterator, Object context);
 
-	public int sortedIndex(Object value, String property) {
-		throw new UnsupportedOperationException();
-	}
+	public native int sortedIndex (Object value, String property);
 
-	public int sortedIndex(Object value, String property, Object context) {
-		throw new UnsupportedOperationException();
-	}
+	public native int sortedIndex (Object value, String property, Object context);
 
 }
