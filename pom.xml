@@ -17,27 +17,22 @@
 	<properties>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.st-js.bridge</groupId>
-			<artifactId>html</artifactId>
-			<version>5.0.bv0-SNAPSHOT</version>
-		</dependency>
+	<dependencies>		
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>jquery</artifactId>
-			<version>1.9.1.bv0-SNAPSHOT</version>
+			<version>1.9.1.bv0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>underscorejs</artifactId>
-			<version>1.5.1.0-SNAPSHOT</version>
+			<version>1.5.1.bv0</version>
 		</dependency>
 	</dependencies>
 
 	<scm>
-		<connection>scm:git:http://github.com/st-js/backbonejs-bridge.git</connection>
-		<developerConnection>scm:git:http://github.com/st-js/backbonejs-bridge.git</developerConnection>
+		<connection>scm:git:https://github.com/st-js/backbonejs-bridge.git</connection>
+		<developerConnection>scm:git:https://github.com/st-js/backbonejs-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/backbonejs-bridge</url>
 	  <tag>HEAD</tag>
   	</scm>
