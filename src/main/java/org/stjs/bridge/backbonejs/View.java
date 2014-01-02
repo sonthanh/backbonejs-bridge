@@ -23,35 +23,24 @@ abstract class View<T extends Model> extends Events {
 
 	}
 
-	protected void initialize() {
+	protected native void initialize();
 
-	}
+	public native void setElement(Element element);
 
-	public void setElement(Element element) {
-	}
+	public native JQueryCore<JQueryCore<?>> $(Object selector);
 
-	public native JQueryCore<JQueryCore<?>> $ (Object selector);
+	public native View<T> render();
 
-	public native View<T> render ();
+	public native void remove();
 
-	public native void remove ();
+	protected native void _ensureElement();
 
-	protected void _ensureElement() {
+	public native void delegateEvents(Map<String, Object> events);
 
-	}
+	public native void undelegateEvents();
 
-	protected void delegateEvents() {
+	public native static <V extends View<? extends Model>> V extend(V properties);
 
-	}
-
-	public void delegateEvents(Map<String, Object> events) {
-	}
-
-	public void undelegateEvents() {
-	}
-
-	public native static <V extends View<? extends Model>> V extend (V properties);
-
-	public native static <V extends View<? extends Model>> V extend (V properties, Map<String, Object> staticProperties);
+	public native static <V extends View<? extends Model>> V extend(V properties, Map<String, Object> staticProperties);
 
 }

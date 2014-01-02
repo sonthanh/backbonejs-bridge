@@ -3,48 +3,33 @@ package org.stjs.bridge.backbonejs;
 import org.stjs.javascript.Map;
 
 public class Events {
-	public void on(String event, Object callback) {
-	}
+	public native void on(String event, Object callback);
 
-	public void on(String event, Object callback, Object context) {
-	}
+	public native void on(String event, Object callback, Object context);
 
-	public void on(Map<String, ? extends Object> events) {
-	}
+	public native void on(Map<String, ? extends Object> events);
 
-	public void off(String event, Object callback) {
-	}
+	public native void off(String event, Object callback);
 
-	public void off(String event, Object callback, Object context) {
-	}
+	public native void off(String event, Object callback, Object context);
 
-	public void off() {
-	}
+	public native void off();
 
-	public void trigger(String events, Object... arguments) {
-	}
+	public native void trigger(String events, Object... arguments);
 
-	public void once(String event, Object callback) {
-	}
+	public native void once(String event, Object callback);
 
-	public void once(String event, Object callback, Object context) {
-	}
+	public native void once(String event, Object callback, Object context);
 
-	public void listenTo(Events model, String event, Object callback) {
-	}
+	public native void listenTo(Events model, String event, Object callback);
 
-	public void listenToOnce(Events model, String event, Object callback) {
-	}
+	public native void listenToOnce(Events model, String event, Object callback);
 
-	public void stopListening(Events model, String event, Object callback) {
-	}
+	public native void stopListening(Events model, String event, Object callback);
 
-	public void stopListening(Events model, String event) {
-	}
+	public native void stopListening(Events model, String event);
 
-	public void stopListening(Events model) {
-	}
+	public native void stopListening(Events model);
 
-	public void stopListening() {
-	}
+	public native void stopListening();
 }

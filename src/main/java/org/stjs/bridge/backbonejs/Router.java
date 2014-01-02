@@ -15,22 +15,16 @@ class Router {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void route(String route, String name) {
-	}
+	public native void route(String route, String name);
 
-	public void route(String route, String name, Object callback) {
-	}
+	public native void route(String route, String name, Object callback);
 
-	public void route(RegExp route, String name) {
-	}
+	public native void route(RegExp route, String name);
 
-	public void route(RegExp route, String name, Object callback) {
-	}
+	public native void route(RegExp route, String name, Object callback);
 
-	public void navigate(String fragment) {
-	}
+	public native void navigate(String fragment);
 
-	public void navigate(String fragment, RouterOptions options) {
-	}
+	public native void navigate(String fragment, RouterOptions options);
 
 }

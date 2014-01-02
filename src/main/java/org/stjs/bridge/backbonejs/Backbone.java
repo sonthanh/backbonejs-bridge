@@ -55,11 +55,9 @@ public class Backbone {
 		}
 	}
 
-	public static <T> void sync(String method, Array<T> model, SyncOptions options) {
-	}
+	public static native <T> void sync(String method, Array<T> model, SyncOptions options);
 
-	public static <T> void sync(String method, Array<T> model) {
-	}
+	public static native <T> void sync(String method, Array<T> model);
 
-	public native static Backbone noConflict ();
+	public native static Backbone noConflict();
 }

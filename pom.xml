@@ -11,7 +11,7 @@
 	<parent>
 		<groupId>org.st-js.bridge</groupId>
 		<artifactId>parent-pom</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 	</parent>
 
 	<properties>
@@ -21,12 +21,12 @@
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>jquery</artifactId>
-			<version>1.9.1.bv0</version>
+			<version>1.9.1.bv1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>underscorejs</artifactId>
-			<version>1.5.1.bv0</version>
+			<version>1.5.1.bv1</version>
 		</dependency>
 	</dependencies>
 

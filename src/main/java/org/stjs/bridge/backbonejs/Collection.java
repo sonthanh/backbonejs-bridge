@@ -32,48 +32,37 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 
 	public native String toJson();
 
-	public void sync() {
-	}
+	public native void sync();
 
 	// -- end underscore
 
-	public void add(Array<T> modelsToAdd) {
-	}
+	public native void add(Array<T> modelsToAdd);
 
-	public void add(Array<T> modelsToAdd, CollectionOptions options) {
-	}
+	public native void add(Array<T> modelsToAdd, CollectionOptions options);
 
-	public void remove(Array<T> modelsToRemove) {
-	}
+	public native void remove(Array<T> modelsToRemove);
 
-	public void remove(Array<T> modelsToRemove, CollectionOptions options) {
-	}
+	public native void remove(Array<T> modelsToRemove, CollectionOptions options);
 
-	public void set(Array<T> modelsToSet) {
-	}
+	public native void set(Array<T> modelsToSet);
 
-	public void set(Array<T> modelsToSet, CollectionOptions options) {
-	}
+	public native void set(Array<T> modelsToSet, CollectionOptions options);
 
 	public native T get(Object id);
 
 	public native T at(int index);
 
-	public void push(Array<T> modelsToPush) {
-	}
+	public native void push(Array<T> modelsToPush);
 
-	public void push(Array<T> modelsToPush, CollectionOptions options) {
-	}
+	public native void push(Array<T> modelsToPush, CollectionOptions options);
 
 	public native T pop();
 
 	public native T pop(CollectionOptions options);
 
-	public void unshift(Array<T> modelsToUnshift) {
-	}
+	public native void unshift(Array<T> modelsToUnshift);
 
-	public void unshift(Array<T> modelsToUnshift, CollectionOptions options) {
-	}
+	public native void unshift(Array<T> modelsToUnshift, CollectionOptions options);
 
 	public native T shift();
 
@@ -81,11 +70,9 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 
 	public native Array<T> slice(int begin, int end);
 
-	public void sort() {
-	}
+	public native void sort();
 
-	public void sort(CollectionOptions options) {
-	}
+	public native void sort(CollectionOptions options);
 
 	public native <V> Array<V> pluck(String attribute);
 
@@ -98,11 +85,9 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 	@Override
 	public native Collection<T> clone();
 
-	public void fetch() {
-	}
+	public native void fetch();
 
-	public void fetch(CollectionOptions options) {
-	}
+	public native void fetch(CollectionOptions options);
 
 	public native T create(Map<String, Object> attributes);
 
@@ -110,7 +95,6 @@ class Collection<T extends Model> extends CollectionUnderscore<T> {
 
 	public native static <V extends Backbone.Collection<?>> Class<V> extend(V properties);
 
-	public native static <V extends Backbone.Collection<?>> Class<V> extend(V properties,
-			Map<String, Object> staticProperties);
+	public native static <V extends Backbone.Collection<?>> Class<V> extend(V properties, Map<String, Object> staticProperties);
 
 }
