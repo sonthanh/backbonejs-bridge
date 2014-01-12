@@ -15,7 +15,6 @@ public class Model extends Events {
 	public Object cid;
 	public Map<String, Object> attributes;
 	public Array<String> changed;
-	public Object defaults;
 	public Object validationError;
 	public Object urlRoot;
 
