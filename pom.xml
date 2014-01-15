@@ -21,12 +21,12 @@
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>jquery</artifactId>
-			<version>1.9.1.bv2-SNAPSHOT</version>
+			<version>1.9.1.bv2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>underscorejs</artifactId>
-			<version>1.5.1.bv2-SNAPSHOT</version>
+			<version>1.5.1.bv2</version>
 		</dependency>
 	</dependencies>
 
